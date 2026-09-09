@@ -4,6 +4,7 @@
 	"compatibilityLevel": "JAVA_21",
 	"client": [
 		"BlahajTooltipMixin"
+		"SharkSwordNameMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
