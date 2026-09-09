@@ -1,49 +1,26 @@
 package com.nac.client;
 
-import com.nac.sounds.NacSoundEvents;
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
+import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
+import net.fabricmc.fabric.api.client.rendering.v1.TooltipComponentCallback;
 
 public class NacSScimisharksClient implements ClientModInitializer {
-    
-    @Override
-    public void onInitializeClient() {
-        NacSoundEvents.touch();
+	@Override
+	public void onInitializeClient() {
+		TooltipComponentCallback.EVENT.register(data -> data instanceof BlahajTooltipData
+				? new BlahajTooltipComponent()
+				: null);
 
-        AttackEntityCallback.EVENT.register((player, level, hand, entity, hitResult) -> {
-            // Ensure this only triggers locally on your machine
-            if (level.isClientSide()) {
-                ItemStack stack = player.getItemInHand(hand);
-                SoundEvent sound = resolveSound(stack);
+		// Replace the vanilla name and add lore in the client tooltip without a mapped ItemStack mixin.
+		ItemTooltipCallback.EVENT.register((stack, tooltipContext, tooltipType, lines) -> {
+			SharkSwords.SwordSkin skin = SharkSwords.get(stack);
 
-                if (sound != null) {
-                    level.playLocalSound(
-                            entity.getX(), entity.getY(), entity.getZ(),
-                            sound,
-                            SoundSource.PLAYERS,
-                            1.0f,
-                            1.0f + (player.getRandom().nextFloat() - 0.5f) * 0.2f,
-                            false
-                    );
-                }
-            }
-            return InteractionResult.PASS;
-        });
-    }
+			if (skin == null || lines.isEmpty()) {
+				return;
+			}
 
-    private SoundEvent resolveSound(ItemStack stack) {
-        if (stack.is(Items.WOODEN_SWORD)) return NacSoundEvents.BLAHAJ_HIT_WOOD;
-        if (stack.is(Items.STONE_SWORD)) return NacSoundEvents.BLAHAJ_HIT_STONE;
-        if (stack.is(Items.IRON_SWORD)) return NacSoundEvents.BLAHAJ_HIT_IRON;
-        if (stack.is(Items.GOLDEN_SWORD)) return NacSoundEvents.BLAHAJ_HIT_GOLD;
-        if (stack.is(Items.DIAMOND_SWORD)) return NacSoundEvents.BLAHAJ_HIT_DIAMOND;
-        if (stack.is(Items.NETHERITE_SWORD)) return NacSoundEvents.BLAHAJ_HIT_NETHERITE;
-        if (stack.is(Items.COPPER_SWORD)) return NacSoundEvents.BLAHAJ_HIT_COPPER;
-        return null;
-    }
+			lines.set(0, skin.name());
+			lines.add(1, skin.lore());
+		});
+	}
 }
