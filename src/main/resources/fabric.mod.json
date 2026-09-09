@@ -20,16 +20,6 @@
 		"client": [
 			"com.nac.client.NacSScimisharksClient"
 		]
-	},
-	"mixins": [
-		{
-			"config": "nacs-scimisharks.client.mixins.json",
-			"environment": "client"
-		},
-		{
-			"config": "nacs-scimisharks.mixins.json",
-			"environment": "*"
-		}
 	],
 	"depends": {
 		"fabricloader": ">=0.19.3",
