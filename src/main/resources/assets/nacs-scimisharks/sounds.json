@@ -1,0 +1,44 @@
+{
+  "entity.blahaj.hit_wood": {
+    "sounds": [
+      "nacs-scimisharks:entity/wood_hit"
+    ],
+    "subtitle": "subtitles.entity.blahaj.hit"
+  },
+  "entity.blahaj.hit_stone": {
+    "sounds": [
+      "nacs-scimisharks:entity/stone_hit"
+    ],
+    "subtitle": "subtitles.entity.blahaj.hit"
+  },
+  "entity.blahaj.hit_iron": {
+    "sounds": [
+      "nacs-scimisharks:entity/iron_hit"
+    ],
+    "subtitle": "subtitles.entity.blahaj.hit"
+  },
+  "entity.blahaj.hit_copper": {
+    "sounds": [
+      "nacs-scimisharks:entity/copper_hit"
+    ],
+    "subtitle": "subtitles.entity.blahaj.hit"
+  },
+  "entity.blahaj.hit_gold": {
+    "sounds": [
+      "nacs-scimisharks:entity/gold_hit"
+    ],
+    "subtitle": "subtitles.entity.blahaj.hit"
+  },
+  "entity.blahaj.hit_diamond": {
+    "sounds": [
+      "nacs-scimisharks:entity/diamond_hit"
+    ],
+    "subtitle": "subtitles.entity.blahaj.hit"
+  },
+  "entity.blahaj.hit_netherite": {
+    "sounds": [
+      "nacs-scimisharks:entity/netherite_hit"
+    ],
+    "subtitle": "subtitles.entity.blahaj.hit"
+  }
+}

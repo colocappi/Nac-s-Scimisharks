@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "nacs-scimisharks",
+	"version": "${version}",
+	"name": "Nac's Scimisharks",
+	"description": "Just a custom personal client-side mod",
+	"authors": [
+		"nacmoonsilver"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/user/Nac_Moonsilver"
+	},
+	"license": "MIT",
+	"icon": "assets/nacs-scimisharks/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"com.nac.NacSScimisharks"
+		],
+		"client": [
+			"com.nac.client.NacSScimisharksClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "nacs-scimisharks.client.mixins.json",
+			"environment": "client"
+		},
+		{
+			"config": "nacs-scimisharks.mixins.json",
+			"environment": "*"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
