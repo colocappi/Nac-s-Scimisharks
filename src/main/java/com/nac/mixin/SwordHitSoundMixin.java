@@ -20,9 +20,11 @@ import net.minecraft.world.phys.Vec3;
 public class SwordHitSoundMixin {
 	@Inject(at = @At("HEAD"), method = "hurtEnemy(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/LivingEntity;)V", cancellable = false)
 	private void playBlahajHitSound(ItemStack stack, LivingEntity target, LivingEntity attacker, CallbackInfo ci) {
-		if (!(attacker instanceof Player)) {
-			return;
-		}
+    com.nac.NacSScimisharks.LOGGER.info("hit sound mixin fired, sound = {}", resolveSound(stack));
+
+    if (!(attacker instanceof Player)) {
+        return;
+    }
 
 		SoundEvent sound = resolveSound(stack);
 		if (sound == null) {
