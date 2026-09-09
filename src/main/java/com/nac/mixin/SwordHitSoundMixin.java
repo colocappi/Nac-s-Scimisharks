@@ -32,14 +32,16 @@ public class SwordHitSoundMixin {
 		}
 
 		Vec3 pos = target.position();
-		attacker.level().playSound(
-				null,
-				pos.x, pos.y, pos.z,
-				sound,
-				SoundSource.PLAYERS,
-				1.0f,
-				1.0f + (attacker.getRandom().nextFloat() - 0.5f) * 0.2f
-		);
+		if (attacker.level().isClientSide()) {
+    attacker.level().playLocalSound(
+            pos.x, pos.y, pos.z,
+            sound,
+            SoundSource.PLAYERS,
+            1.0f,
+            1.0f + (attacker.getRandom().nextFloat() - 0.5f) * 0.2f,
+            false
+    );
+}
 	}
 
 	private static SoundEvent resolveSound(ItemStack stack) {
