@@ -1,7 +1,7 @@
 Initialized native services in: C:\Users\elcol\.gradle\native
 Initialized jansi services in: C:\Users\elcol\.gradle\native
-The client will now receive all logging from the daemon (pid: 35604). The daemon log file: C:\Users\elcol\.gradle\daemon\9.7.0\daemon-35604.out.log
-Starting 2nd build in daemon [uptime: 28.927 secs, performance: 98%, GC rate: 0.00/s, heap usage: 0% of 1 GiB]
+The client will now receive all logging from the daemon (pid: 21852). The daemon log file: C:\Users\elcol\.gradle\daemon\9.7.0\daemon-21852.out.log
+Starting 3rd build in daemon [uptime: 16 mins 48.401 secs, performance: 98%, GC rate: 0.00/s, heap usage: 0% of 1 GiB]
 Using 16 worker leases.
 Operational build model parameters: {cachingModelBuilding=false, configurationCache=false, configurationCacheDisabledReason=null, configurationCacheParallelLoad=false, configurationCacheParallelStore=false, configureOnDemand=false, invalidateCoupledProjects=false, isolatedProjects=false, isolatedProjectsDiagnostics=false, isolatedProjectsDangerouslyIgnoreProblems=false, modelAsProjectDependency=false, modelBuilding=false, parallelModelBuilding=false, parallelProjectConfiguration=false, parallelProjectExecution=true, vintage=true}
 Now considering [C:\Users\elcol\Desktop\cosas gian\nacs-scimisharks-template-1.21.11] as hierarchies to watch
@@ -37,17 +37,17 @@ Selected primary task 'clean' from project :
 Selected primary task 'build' from project :
 Tasks to be executed: [task ':clean', task ':compileJava', task ':processResources', task ':classes', task ':compileClientJava', task ':processClientResources', task ':jar', task ':processIncludeJars', task ':remapJar', task ':sourcesJar', task ':remapSourcesJar', task ':assemble', task ':clientClasses', task ':compileTestJava', task ':processTestResources', task ':testClasses', task ':test', task ':validateAccessWidener', task ':check', task ':build']
 Tasks that were excluded: []
-Resolve mutations for :clean (Thread[#440,Execution worker,5,main]) started.
-:clean (Thread[#440,Execution worker,5,main]) started.
-destroyer locations for task group 0 (Thread[#441,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :clean (Thread[#703,Execution worker,5,main]) started.
+:clean (Thread[#703,Execution worker,5,main]) started.
+destroyer locations for task group 0 (Thread[#704,Execution worker Thread 2,5,main]) started.
 
 > Task :clean
 Caching disabled for task ':clean' because:
   Build cache is disabled
 Task ':clean' is not up-to-date because:
   Task has not declared any outputs despite executing actions.
-Resolve mutations for :compileJava (Thread[#440,Execution worker,5,main]) started.
-:compileJava (Thread[#440,Execution worker,5,main]) started.
+Resolve mutations for :compileJava (Thread[#703,Execution worker,5,main]) started.
+:compileJava (Thread[#703,Execution worker,5,main]) started.
 
 > Task :compileJava
 Caching disabled for task ':compileJava' because:
@@ -62,10 +62,10 @@ Compilation mode: in-process compilation
 Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
 Compiling with toolchain 'C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot'.
 Compiling with JDK Java compiler API.
-Class dependency analysis for incremental compilation took 0.004 secs.
-Created classpath snapshot for incremental compilation in 0.027 secs.
-Resolve mutations for :processResources (Thread[#440,Execution worker,5,main]) started.
-:processResources (Thread[#440,Execution worker,5,main]) started.
+Class dependency analysis for incremental compilation took 0.003 secs.
+Created classpath snapshot for incremental compilation in 0.013 secs.
+Resolve mutations for :processResources (Thread[#703,Execution worker,5,main]) started.
+:processResources (Thread[#703,Execution worker,5,main]) started.
 
 > Task :processResources
 Caching disabled for task ':processResources' because:
@@ -76,13 +76,13 @@ Task ':processResources' is not up-to-date because:
   Output property 'destinationDir' file C:\Users\elcol\Desktop\cosas gian\nacs-scimisharks-template-1.21.11\build\resources\main\assets has been removed.
   Output property 'destinationDir' file C:\Users\elcol\Desktop\cosas gian\nacs-scimisharks-template-1.21.11\build\resources\main\assets\minecraft has been removed.
   and more...
-Resolve mutations for :classes (Thread[#440,Execution worker,5,main]) started.
-:classes (Thread[#440,Execution worker,5,main]) started.
+Resolve mutations for :classes (Thread[#715,Execution worker Thread 12,5,main]) started.
+:classes (Thread[#703,Execution worker,5,main]) started.
 
 > Task :classes
 Skipping task ':classes' as it has no actions.
-Resolve mutations for :compileClientJava (Thread[#440,Execution worker,5,main]) started.
-:compileClientJava (Thread[#440,Execution worker,5,main]) started.
+Resolve mutations for :compileClientJava (Thread[#703,Execution worker,5,main]) started.
+:compileClientJava (Thread[#703,Execution worker,5,main]) started.
 
 > Task :compileClientJava
 Caching disabled for task ':compileClientJava' because:
@@ -98,9 +98,9 @@ Full recompilation is required because no incremental change information is avai
 Compiling with toolchain 'C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot'.
 Compiling with JDK Java compiler API.
 Class dependency analysis for incremental compilation took 0.005 secs.
-Created classpath snapshot for incremental compilation in 0.015 secs.
-Resolve mutations for :processClientResources (Thread[#440,Execution worker,5,main]) started.
-:processClientResources (Thread[#440,Execution worker,5,main]) started.
+Created classpath snapshot for incremental compilation in 0.019 secs.
+Resolve mutations for :processClientResources (Thread[#703,Execution worker,5,main]) started.
+:processClientResources (Thread[#703,Execution worker,5,main]) started.
 
 > Task :processClientResources
 Caching disabled for task ':processClientResources' because:
@@ -111,8 +111,8 @@ Task ':processClientResources' is not up-to-date because:
   Output property 'destinationDir' file C:\Users\elcol\Desktop\cosas gian\nacs-scimisharks-template-1.21.11\build\resources\client\assets has been removed.
   Output property 'destinationDir' file C:\Users\elcol\Desktop\cosas gian\nacs-scimisharks-template-1.21.11\build\resources\client\assets\nacs-scimisharks has been removed.
   and more...
-Resolve mutations for :jar (Thread[#440,Execution worker,5,main]) started.
-:jar (Thread[#440,Execution worker,5,main]) started.
+Resolve mutations for :jar (Thread[#715,Execution worker Thread 12,5,main]) started.
+:jar (Thread[#703,Execution worker,5,main]) started.
 
 > Task :jar
 Caching disabled for task ':jar' because:
@@ -120,8 +120,8 @@ Caching disabled for task ':jar' because:
   Not worth caching
 Task ':jar' is not up-to-date because:
   Output property 'archiveFile' file C:\Users\elcol\Desktop\cosas gian\nacs-scimisharks-template-1.21.11\build\devlibs\nacs-scimisharks-1.0.0-dev.jar has been removed.
-Resolve mutations for :processIncludeJars (Thread[#440,Execution worker,5,main]) started.
-:processIncludeJars (Thread[#440,Execution worker,5,main]) started.
+Resolve mutations for :processIncludeJars (Thread[#703,Execution worker,5,main]) started.
+:processIncludeJars (Thread[#715,Execution worker Thread 12,5,main]) started.
 
 > Task :processIncludeJars
 Caching disabled for task ':processIncludeJars' because:
@@ -129,10 +129,10 @@ Caching disabled for task ':processIncludeJars' because:
   Caching has been disabled for the task
 Task ':processIncludeJars' is not up-to-date because:
   Output property 'outputDirectory' file C:\Users\elcol\Desktop\cosas gian\nacs-scimisharks-template-1.21.11\build\processIncludeJars has been removed.
-Resolve mutations for :remapJar (Thread[#440,Execution worker,5,main]) started.
-:remapJar (Thread[#440,Execution worker,5,main]) started.
-Resolve mutations for :sourcesJar (Thread[#449,Execution worker Thread 9,5,main]) started.
-:sourcesJar (Thread[#449,Execution worker Thread 9,5,main]) started.
+Resolve mutations for :remapJar (Thread[#703,Execution worker,5,main]) started.
+:remapJar (Thread[#703,Execution worker,5,main]) started.
+Resolve mutations for :sourcesJar (Thread[#713,Execution worker Thread 10,5,main]) started.
+:sourcesJar (Thread[#713,Execution worker Thread 10,5,main]) started.
 
 > Task :sourcesJar
 Caching disabled for task ':sourcesJar' because:
@@ -140,71 +140,68 @@ Caching disabled for task ':sourcesJar' because:
   Not worth caching
 Task ':sourcesJar' is not up-to-date because:
   Output property 'archiveFile' file C:\Users\elcol\Desktop\cosas gian\nacs-scimisharks-template-1.21.11\build\devlibs\nacs-scimisharks-1.0.0-sources.jar has been removed.
-Resolve mutations for :remapSourcesJar (Thread[#449,Execution worker Thread 9,5,main]) started.
-:remapSourcesJar (Thread[#449,Execution worker Thread 9,5,main]) started.
-Resolve mutations for :clientClasses (Thread[#443,Execution worker Thread 4,5,main]) started.
-:clientClasses (Thread[#443,Execution worker Thread 4,5,main]) started.
+Resolve mutations for :remapSourcesJar (Thread[#713,Execution worker Thread 10,5,main]) started.
+:remapSourcesJar (Thread[#713,Execution worker Thread 10,5,main]) started.
+Resolve mutations for :clientClasses (Thread[#717,Execution worker Thread 14,5,main]) started.
+:clientClasses (Thread[#717,Execution worker Thread 14,5,main]) started.
 
 > Task :clientClasses
 Skipping task ':clientClasses' as it has no actions.
-Resolve mutations for :compileTestJava (Thread[#443,Execution worker Thread 4,5,main]) started.
-:compileTestJava (Thread[#443,Execution worker Thread 4,5,main]) started.
+Resolve mutations for :compileTestJava (Thread[#717,Execution worker Thread 14,5,main]) started.
+:compileTestJava (Thread[#717,Execution worker Thread 14,5,main]) started.
 
 > Task :compileTestJava NO-SOURCE
 Skipping task ':compileTestJava' as it has no source files and no previous output files.
-Resolve mutations for :processTestResources (Thread[#443,Execution worker Thread 4,5,main]) started.
-:processTestResources (Thread[#443,Execution worker Thread 4,5,main]) started.
+Resolve mutations for :processTestResources (Thread[#717,Execution worker Thread 14,5,main]) started.
+:processTestResources (Thread[#717,Execution worker Thread 14,5,main]) started.
 
 > Task :processTestResources NO-SOURCE
 Skipping task ':processTestResources' as it has no source files and no previous output files.
-Resolve mutations for :testClasses (Thread[#443,Execution worker Thread 4,5,main]) started.
-:testClasses (Thread[#443,Execution worker Thread 4,5,main]) started.
+Resolve mutations for :testClasses (Thread[#717,Execution worker Thread 14,5,main]) started.
+:testClasses (Thread[#717,Execution worker Thread 14,5,main]) started.
 
 > Task :testClasses UP-TO-DATE
 Skipping task ':testClasses' as it has no actions.
-Resolve mutations for :test (Thread[#443,Execution worker Thread 4,5,main]) started.
-:test (Thread[#443,Execution worker Thread 4,5,main]) started.
+Resolve mutations for :test (Thread[#717,Execution worker Thread 14,5,main]) started.
+:test (Thread[#717,Execution worker Thread 14,5,main]) started.
 
 > Task :test NO-SOURCE
 Skipping task ':test' as it has no source files and no previous output files.
-Resolve mutations for :validateAccessWidener (Thread[#443,Execution worker Thread 4,5,main]) started.
-:validateAccessWidener (Thread[#443,Execution worker Thread 4,5,main]) started.
+Resolve mutations for :validateAccessWidener (Thread[#717,Execution worker Thread 14,5,main]) started.
+:validateAccessWidener (Thread[#717,Execution worker Thread 14,5,main]) started.
 
 > Task :validateAccessWidener NO-SOURCE
 Skipping task ':validateAccessWidener' as it has no source files and no previous output files.
-Resolve mutations for :check (Thread[#443,Execution worker Thread 4,5,main]) started.
-:check (Thread[#443,Execution worker Thread 4,5,main]) started.
+Resolve mutations for :check (Thread[#717,Execution worker Thread 14,5,main]) started.
+:check (Thread[#717,Execution worker Thread 14,5,main]) started.
 
 > Task :check UP-TO-DATE
 Skipping task ':check' as it has no actions.
-
-> Task :remapJar
-Caching disabled for task ':remapJar' because:
-  Build cache is disabled
-Task ':remapJar' is not up-to-date because:
-  Output property 'archiveFile' file C:\Users\elcol\Desktop\cosas gian\nacs-scimisharks-template-1.21.11\build\libs\nacs-scimisharks-1.0.0.jar has been removed.
-Remapping C:\Users\elcol\AppData\Local\Temp\loom-remapJar-9415236605416001250-input.jar to C:\Users\elcol\Desktop\cosas gian\nacs-scimisharks-template-1.21.11\build\libs\nacs-scimisharks-1.0.0.jar
 
 > Task :remapSourcesJar
 Caching disabled for task ':remapSourcesJar' because:
   Build cache is disabled
 Task ':remapSourcesJar' is not up-to-date because:
   Output property 'archiveFile' file C:\Users\elcol\Desktop\cosas gian\nacs-scimisharks-template-1.21.11\build\libs\nacs-scimisharks-1.0.0-sources.jar has been removed.
-Cannot remap hurtEnemy(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/player/Player;)Z because it does not exist in any of the targets [net/minecraft/world/item/Item]
 
 > Task :remapJar
+Caching disabled for task ':remapJar' because:
+  Build cache is disabled
+Task ':remapJar' is not up-to-date because:
+  Output property 'archiveFile' file C:\Users\elcol\Desktop\cosas gian\nacs-scimisharks-template-1.21.11\build\libs\nacs-scimisharks-1.0.0.jar has been removed.
+Remapping C:\Users\elcol\AppData\Local\Temp\loom-remapJar-16819980948260620121-input.jar to C:\Users\elcol\Desktop\cosas gian\nacs-scimisharks-template-1.21.11\build\libs\nacs-scimisharks-1.0.0.jar
 No jars to nest
-Resolve mutations for :assemble (Thread[#440,Execution worker,5,main]) started.
-:assemble (Thread[#440,Execution worker,5,main]) started.
+Resolve mutations for :assemble (Thread[#703,Execution worker,5,main]) started.
+:assemble (Thread[#703,Execution worker,5,main]) started.
 
 > Task :assemble
 Skipping task ':assemble' as it has no actions.
-Resolve mutations for :build (Thread[#440,Execution worker,5,main]) started.
-:build (Thread[#440,Execution worker,5,main]) started.
+Resolve mutations for :build (Thread[#703,Execution worker,5,main]) started.
+:build (Thread[#703,Execution worker,5,main]) started.
 
 > Task :build
 Skipping task ':build' as it has no actions.
 
-BUILD SUCCESSFUL in 8s
+BUILD SUCCESSFUL in 5s
 10 actionable tasks: 10 executed
 Watched directory hierarchies: [C:\Users\elcol\Desktop\cosas gian\nacs-scimisharks-template-1.21.11]
