@@ -4,7 +4,7 @@
 	"compatibilityLevel": "JAVA_21",
 	"refmap": "nacs-scimisharks-refmap.json",
 	"mixins": [
-		"SwordHitSoundMixin"
+		
 	],
 	"injectors": {
 		"defaultRequire": 1
