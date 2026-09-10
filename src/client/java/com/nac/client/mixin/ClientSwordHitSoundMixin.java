@@ -28,7 +28,6 @@ public class ClientSwordHitSoundMixin {
             else if (stack.is(Items.GOLDEN_SWORD)) sound = NacSoundEvents.BLAHAJ_HIT_GOLD;
             else if (stack.is(Items.DIAMOND_SWORD)) sound = NacSoundEvents.BLAHAJ_HIT_DIAMOND;
             else if (stack.is(Items.NETHERITE_SWORD)) sound = NacSoundEvents.BLAHAJ_HIT_NETHERITE;
-            else if (stack.is(Items.COPPER_SWORD)) sound = NacSoundEvents.BLAHAJ_HIT_COPPER;
 
             if (sound != null) {
                 player.level().playLocalSound(
